@@ -1,0 +1,23 @@
+footer{
+    position: absolute;
+    margin-top: -1px;
+    width: 100%;
+    z-index: -1;
+
+    .footerBG{
+        width: calc(60% + 4px);
+        height: 564px;
+        margin: auto;
+        background: url(../img/img/footerBG.webp)no-repeat;
+        background-size: 60vw 100%;
+        filter: drop-shadow( 0 0 50px rgba(0, 0, 0, 0.5) );
+
+        .copyright{
+            margin: 0;
+            padding-top: 160px;
+            text-align: center;
+            font-size: 20px;
+            color: #603813;
+        }
+    }
+}
