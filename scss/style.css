@@ -924,6 +924,9 @@
     font-size: 12px;
   }
 }
+.wrap .Introduction2 #Introduction2Title {
+  padding-top: 0px;
+}
 .wrap .bottom {
   height: 100px;
 }
