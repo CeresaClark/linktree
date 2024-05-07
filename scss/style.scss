@@ -1,3 +1,12 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap');
+
+@import '_rwd';
+
+@import '_main';
+
+@import '_footer';
+
 body{
     padding: 0;
     margin: 0;
@@ -5,7 +14,7 @@ body{
     height: 100%;
     background: url(../img/img/bg.webp);
     background-attachment: fixed;
-    background-size: 100%;
+    background-size: cover;
 }
 
 ::-webkit-scrollbar {
@@ -54,6 +63,10 @@ p{
     background: url(../img/img/bracketsTop.webp)no-repeat;
     background-size: contain;
     background-position: center;
+
+    @include sm(){
+        height: 50px;
+    }
 }
 
 .bracketsBottom{
@@ -61,10 +74,4 @@ p{
     background-size: contain;
     background-position: center;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap');
-
-@import '_main';
-
-@import '_footer';
 
