@@ -1,0 +1,839 @@
+.corners{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    
+    @include sm(){
+        display: none;
+    }
+
+    div{
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        background: url(../img/img/corner.webp);
+        background-size: contain;
+        @include xxl(){
+            width: 120px;
+            height: 120px;
+        }
+
+        @include lg(){
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    .RT{
+        top: 0;
+        right: 0;
+        transform: scaleY(-1);
+    }
+
+    .RB{
+        bottom: 0;
+        right: 0;
+    }
+
+    .LT{
+        top: 0;
+        left: 0;
+        transform: scaleX(-1)scaleY(-1);
+    }
+
+    .LB{
+        bottom: 0;
+        left: 0;
+        transform: scaleX(-1);
+    }
+}
+
+.wrap{
+    position: relative;
+    margin: auto;
+    width: 60%;
+    height: auto;
+    background-color: #FFF;
+    border-left: 2px #EEC300 solid;
+    border-right: 2px #EEC300 solid;
+    box-shadow: 0 -50px 50px rgba(0, 0, 0, 0.5);
+
+    @include lg(){
+        width: 70%;
+    }
+    @include md(){
+        width: 75%;
+    }
+    @include sm(){
+        width: 80%;
+    }
+
+    &::after{
+        content: "Copyright © 2024 Ceresa Clark Inc.";
+        position: absolute;
+        width: 100%;
+        margin-top: -1px;
+        left: 50%;
+        translate: -50%;
+        height: 564px;
+        filter: drop-shadow(2px 0 0 #EEC300)drop-shadow(-2px 0 0 #EEC300)drop-shadow(0 -50px 50px rgba(0, 0, 0, 0.5));
+        background: url(../img/img/footerBG.webp)no-repeat;
+        background-position: bottom center;
+        background-size: cover;
+        z-index: -1;
+        
+        text-align: center;
+        font-size: 18px;
+        line-height: 564px;
+        color: #603813;
+        font-family: "Noto Serif TC", serif;
+        font-weight: 700;
+        font-style: normal;
+        user-select: none;
+
+        @include xl(){
+            height: 400px;
+            line-height: 200px;
+        }
+        @include sm(){
+            height: 300px;
+            line-height: 100px;
+            font-size: 16px;
+        }
+        @include xs(){
+            font-size: 13px;
+        }
+        @include xxs(){
+            font-size: 10px;
+        }
+    }
+    
+
+    .head{
+        width: 100%;
+
+        #video{
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-bottom: 2px #EEC300 solid;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5) ;
+            @include xxl(){
+                height: 350px;
+            }
+            @include lg(){
+                height: 300px;
+            }
+            @include sm(){
+                height: 250px;
+            }
+            @include xs(){
+                height: 200px;
+            }
+            @include xxs(){
+                height: 150px;
+            }
+            @include xxxs(){
+                height: 120px;
+            }
+            @include xxxxs(){
+                height: 100px;
+            }
+
+        }
+    }
+
+    .photo{
+        margin: auto;
+        margin-top: -110px;
+        left: 50%;
+        translate: 0;
+        width: 200px;
+        height: 200px;
+        border: 2px #EEC300 solid;
+        border-radius: 100%;
+        background: url(../img/img/photo.webp)no-repeat;
+        background-color: #FFD2D1;
+        background-size: cover;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5) ;
+        @include md(){
+            width: 190px;
+            height: 190px;
+        }
+
+        @include sm(){
+            width: 180px;
+            height: 180px;
+        }
+
+        @include xs(){
+            width: 160px;
+            height: 160px;
+        }
+
+        @include xxs(){
+            margin-top: -80px;
+            width: 140px;
+            height: 140px;
+        }
+
+        @include xxxs(){
+            width: 120px;
+            height: 120px;
+        }
+
+    }
+
+    .myname{
+        margin: auto;
+        margin-top: 30px;
+        text-align: center;
+        font-size: 30px;
+        color: #603813;
+
+        @include sm(){
+            font-size: 25px;
+        }
+        @include xs(){
+            font-size: 20px;
+        }
+        @include xxs(){
+            font-size: 17px;
+        }
+        @include xxxs(){
+            font-size: 15px;
+        }
+    }
+
+    .botton-s{
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 30px;
+        margin: 30px 0px;
+        display: flex;
+        justify-content: center;
+
+        @include xxs(){
+            margin: 15px 0;
+        }
+
+        .YT_s{
+            background: url(../img/img/YT.webp)no-repeat;
+            background-size: contain;
+            background-position: center;
+
+        }
+
+        .X_s{
+            background: url(../img/img/X.webp)no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+
+        .DC_s{
+            background: url(../img/img/DC.webp)no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+
+        .anonymous_s{
+            background: url(../img/img/anonymous.webp)no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+
+        div{
+            position: relative;
+            width: 50px;
+            height: 30px;
+            margin: 0 20px;
+            cursor: pointer;
+
+            @include xs(){
+                width: 30px;
+                height: 30px;
+            }
+            @include xxs(){
+                width: 20px;
+                height: 20px;
+                margin: 0 10px;
+            }
+
+            a{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+            
+            &::after{
+                position: absolute;
+                content: " ";
+                translate: -6px -16px;
+                width: 60px;
+                height: 60px;
+                border: #8A4912 1px solid;
+                transform: rotate(0deg);
+                opacity: 0;
+                transition: 0.3s;
+                pointer-events: none;
+
+                @include xs(){
+                    translate: -6px -6px;
+                    width: 40px;
+                    height: 40px;
+                }
+                @include xxs(){
+                    translate: -6px -6px;
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+
+            &:hover{
+                &::after{
+                    border: #8A4912 1px solid;
+                    transform: rotate(45deg);
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .Introduction{
+        position: relative;
+        left: 50%;
+        translate: -50%;
+        width: 60%;
+        height: auto;
+
+        @include sm(){
+            width: 80%;
+        }
+        @include xxs(){
+            width: 90%;
+        }
+
+        .Myintroduction{
+            width: 90%;
+            margin: auto;
+            padding-top: 70px;
+            text-align: center;
+            font-size: 20px;
+            color: #603813;
+            
+            @include sm(){
+                font-size: 18px;
+            }
+            @include xs(){
+                font-size: 15px;
+            }
+            @include xxs(){
+                font-size: 12px;
+            }
+        }
+
+    }
+
+    .botton{
+        position: relative;
+        z-index: 1;
+        width: 80%;
+        height: 230px;
+        margin: 30px auto 100px;
+        top: 70px;
+        display: flex;
+        justify-content: center;
+        transform-style: preserve-3d;
+        perspective: 1000px;
+
+        @include xxl(){
+            width: 90%;
+            height: 165px;
+        }
+
+        @include lg(){
+            width: 95%;
+            height: 140px;
+        }
+
+        @include sm(){
+            flex-wrap: wrap;
+            height: 600px;
+            align-content: center;
+        }
+
+        @include xs(){
+            width: 90%;
+            height: 500px;
+        }
+
+        @include xxs(){
+            width: 95%;
+            height: 400px;
+        }
+
+        @include xxxs(){
+            height: 350px;
+        }
+
+        @include xxxxs(){
+            height: 320px;
+        }
+
+        .YT{
+            background: url(../img/img/YT_botton.webp)no-repeat;
+            background-size: contain;
+            background-position: center;
+            @include sm(){
+                background-image: url(../img/img/YT_botton_M.webp);
+            }
+
+            &:hover{
+                background: url(../img/img/YT_botton_hover.webp)no-repeat;
+                background-size: contain;
+                background-position: center;
+                @include sm(){
+                    background-image: url(../img/img/YT_botton_hover_M.webp);
+                }
+            }
+        }
+
+        .X{
+            background: url(../img/img/X_botton.webp)no-repeat;
+            background-size: contain;
+            background-position: center;
+            @include sm(){
+                background-image: url(../img/img/X_botton_M.webp);
+            }
+
+            &:hover{
+                background: url(../img/img/X_botton_hover.webp)no-repeat;
+                background-size: contain;
+                background-position: center;
+                @include sm(){
+                    background-image: url(../img/img/X_botton_hover_M.webp);
+                }
+            }
+        }
+
+        .DC{
+            background: url(../img/img/DC_botton.webp)no-repeat;
+            background-size: contain;
+            background-position: center;
+            @include sm(){
+                background-image: url(../img/img/DC_botton_M.webp);
+            }
+
+            &:hover{
+                background: url(../img/img/DC_botton_hover.webp)no-repeat;
+                background-size: contain;
+                background-position: center;
+                @include sm(){
+                    background-image: url(../img/img/DC_botton_hover_M.webp);
+                }
+            }
+        }
+
+        .anonymous{
+            background: url(../img/img/anonymous_botton.webp)no-repeat;
+            background-size: contain;
+            background-position: center;
+            @include sm(){
+                background-image: url(../img/img/anonymous_botton_M.webp);
+            }
+
+            &:hover{
+                background: url(../img/img/anonymous_botton_hover.webp)no-repeat;
+                background-size: contain;
+                background-position: center;
+                @include sm(){
+                    background-image: url(../img/img/anonymous_botton_hover_M.webp);
+                }
+            }
+        }
+
+        .cooperate{
+            background: url(../img/img/cooperate_botton.webp)no-repeat;
+            background-size: contain;
+            background-position: center;
+            @include sm(){
+                background-image: url(../img/img/cooperate_botton_M.webp);
+            }
+
+            &:hover{
+                background: url(../img/img/cooperate_botton_hover.webp)no-repeat;
+                background-size: contain;
+                background-position: center;
+                @include sm(){
+                    background-image: url(../img/img/cooperate_botton_hover_M.webp);
+                }
+            }
+        }
+
+        div{
+            position: relative;
+            width: 200px;
+            height: 100%;
+            margin: 0 10px;
+            cursor: pointer;
+            transform-style: preserve-3d;
+            transform: rotateY(0deg);
+            transition: 0.2s;
+            filter: drop-shadow(0 5px 2px rgba(0, 0, 0, 0.3));
+
+            @include xxl(){
+                height: 165px;
+            }
+
+            @include lg(){
+                height: 140px;
+            }
+
+            @include sm(){
+                width: 100%;
+                height: 110px;
+                margin: 5px 10px;
+            }
+            @include xs(){
+                height: 90px;
+            }
+            @include xxs(){
+                height: 80px;
+            }
+
+            @include xxxs(){
+                height: 70px;
+            }
+
+            @include xxxxs(){
+                height: 60px;
+            }
+
+            a{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+
+            &:hover{
+                transform: rotateY(180deg);
+                @include sm(){
+                    transform: rotateX(180deg);
+                    filter: drop-shadow(0 -5px 2px rgba(0, 0, 0, 0.3));
+                }
+            }
+        }
+    }
+
+    .ThreeView{
+        position: relative;
+        left: 50%;
+        translate: -50%;
+        width: 100%;
+        height: auto;
+
+        .ThreeViewTitle{
+            width: 90%;
+            margin: auto;
+            padding-top: 70px;
+            text-align: center;
+            font-size: 30px;
+            color: #603813;
+
+            @include sm(){
+                font-size: 25px;
+                padding-top: 50px;
+            }
+            @include xs(){
+                font-size: 20px;
+            }
+            @include xxs(){
+                font-size: 17px;
+                padding-top: 40px;
+            }
+            @include xxxs(){
+                font-size: 15px;
+            }
+        }
+
+        .img1{
+            height: calc(60vw * 0.8 * 0.65);
+
+            @include md(){
+                height: calc(60vw * 0.9 * 0.65);
+            }
+            @include sm(){
+                height: calc(80vw * 0.85 * 0.65);
+            }
+            background: url(../img/img/ThreeView2.0.webp)no-repeat;
+            filter: 
+            drop-shadow(0px 2px 0px #EEC300)
+            drop-shadow(2px 0px 0px #EEC300)
+            drop-shadow(0px -2px 0px #EEC300)
+            drop-shadow(-2px 0px 0px #EEC300);
+        }
+            
+        .img2{
+            height: calc(60vw * 0.8 * 0.41);
+
+            @include md(){
+                height: calc(60vw * 0.9 * 0.41);
+            }
+            @include sm(){
+                height: calc(80vw * 0.85 * 0.41);
+            }
+
+            background: url(../img/img/ThreeView1.0.webp)no-repeat;
+            filter: 
+            drop-shadow(0px 2px 0px #EEC300)
+            drop-shadow(2px 0px 0px #EEC300)
+            drop-shadow(0px -2px 0px #EEC300)
+            drop-shadow(-2px 0px 0px #EEC300);
+        }
+
+        .img1,.img2{
+            margin: 15px auto;
+            width: 80%;
+            background-size: contain;
+            background-position: center;
+
+            @include md(){
+                width: 90%;
+            }
+
+            @include sm(){
+                width: 85%;
+            }
+        }
+
+        .bracketsTop,.bracketsBottom{
+            position: absolute;
+            width: 60%;
+            left: 50%;
+            translate: -50%;
+
+            @include sm(){
+                width: 80% ;
+            }
+            @include xxs(){
+                width: 90%;
+            }
+        }
+
+    }
+
+    .donate{
+        position: relative;
+        z-index: 1;
+        width: 80%;
+        height: 230px;
+        margin: 30px auto 100px;
+        top: 70px;
+        display: flex;
+        justify-content: center;
+        transform-style: preserve-3d;
+        perspective: 1000px;
+
+        @include sm(){
+            flex-wrap: wrap;
+            height: 250px;
+            align-content: center;
+            margin-top: 0px;
+        }
+
+        @include xs(){
+            width: 90%;
+            height: 200px;
+        }
+
+        @include xxs(){
+            width: 95%;
+            height: 200px;
+        }
+
+        @include xxxs(){
+            height: 150px;
+        }
+
+        @include xxxxs(){
+            height: 100px;
+        }
+
+        .donate1{
+            background: url(../img/img/donate_botton1.webp)no-repeat;
+            background-size: contain;
+            background-position: center;
+            @include sm(){
+                background-image: url(../img/img/donate_botton1_M.webp);
+            }
+
+            &:hover{
+                background: url(../img/img/donate_botton1_hover.webp)no-repeat;
+                background-size: contain;
+                background-position: center;
+                @include sm(){
+                    background-image: url(../img/img/donate_botton1_hover_M.webp);
+                }
+            }
+        }
+
+        .donate_img{
+            background: url(../img/img/coin.png)no-repeat;
+            background-size: contain;
+            background-position: center;
+            pointer-events: none;
+            @include sm(){
+                display: none;
+            }
+        }
+
+        .donate2{
+            background: url(../img/img/donate_botton2.webp)no-repeat;
+            background-size: contain;
+            background-position: center;
+            @include sm(){
+                background-image: url(../img/img/donate_botton2_M.webp);
+            }
+
+            &:hover{
+                background: url(../img/img/donate_botton2_hover.webp)no-repeat;
+                background-size: contain;
+                background-position: center;
+                @include sm(){
+                    background-image: url(../img/img/donate_botton2_hover_M.webp);
+                }
+            }
+        }
+
+        div{
+            position: relative;
+            width: 200px;
+            height: 100%;
+            margin: 0 0px;
+            cursor: pointer;
+            transform-style: preserve-3d;
+            transform: rotateY(0deg);
+            transition: 0.2s;
+            filter: drop-shadow(0 5px 2px rgba(0, 0, 0, 0.3));
+            @include sm(){
+                width: 100%;
+                height: 110px;
+            }
+            @include xs(){
+                height: 90px;
+            }
+            @include xxs(){
+                height: 80px;
+            }
+
+            @include xxxs(){
+                height: 70px;
+            }
+
+            @include xxxxs(){
+                height: 60px;
+            }
+
+            a{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+
+            &:hover{
+                transform: rotateY(180deg);
+                @include sm(){
+                    transform: rotateX(180deg);
+                    filter: drop-shadow(0 -5px 2px rgba(0, 0, 0, 0.3));
+                }
+            }
+        }
+    }
+
+    .Introduction2{
+        position: relative;
+        left: 50%;
+        translate: -50%;
+        width: 60%;
+        height: auto;
+
+        @include sm(){
+            width: 80%;
+        }
+        @include xxs(){
+            width: 90%;
+        }
+
+        .Introduction2Title{
+            width: 90%;
+            margin: auto;
+            padding-top: 70px;
+            text-align: center;
+            font-size: 30px;
+            color: #603813;
+            @include sm(){
+                font-size: 25px;
+                padding-top: 50px;
+            }
+            @include xs(){
+                font-size: 20px;
+            }
+            @include xxs(){
+                font-size: 17px;
+                padding-top: 40px;
+            }
+            @include xxxs(){
+                font-size: 15px;
+            }
+        }
+
+        .Myintroduction2{
+            width: 90%;
+            margin: auto;
+            padding-top: 20px;
+            text-align: left;
+            font-size: 20px;
+            color: #603813;
+            
+            @include sm(){
+                font-size: 18px;
+            }
+            @include xs(){
+                font-size: 15px;
+            }
+            @include xxs(){
+                font-size: 12px;
+            }
+
+        }
+        ol{
+            li{
+                font-family: "Noto Serif TC", serif;
+                font-weight: 700;
+                font-style: normal;
+                user-select: none;
+                color: #603813;
+                text-align: left;
+                font-size: 20px;
+                
+                @include sm(){
+                    font-size: 18px;
+                }
+                @include xs(){
+                    font-size: 15px;
+                }
+                @include xxs(){
+                    font-size: 12px;
+                }
+
+            }
+        }
+
+    }
+
+    .bottom{
+        height: 100px;
+    }
+}
