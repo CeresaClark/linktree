@@ -775,12 +775,14 @@
             color: #603813;
             @include sm(){
                 font-size: 25px;
+                padding-top: 50px;
             }
             @include xs(){
                 font-size: 20px;
             }
             @include xxs(){
                 font-size: 17px;
+                padding-top: 40px;
             }
             @include xxxs(){
                 font-size: 15px;

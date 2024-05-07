@@ -856,6 +856,7 @@
 @media all and (max-width: 768px) {
   .wrap .Introduction2 .Introduction2Title {
     font-size: 25px;
+    padding-top: 50px;
   }
 }
 @media all and (max-width: 576px) {
@@ -866,6 +867,7 @@
 @media all and (max-width: 420px) {
   .wrap .Introduction2 .Introduction2Title {
     font-size: 17px;
+    padding-top: 40px;
   }
 }
 @media all and (max-width: 375px) {
