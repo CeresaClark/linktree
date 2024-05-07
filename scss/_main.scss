@@ -817,6 +817,7 @@
                 color: #603813;
                 text-align: left;
                 font-size: 20px;
+                margin-bottom: 5px;
                 
                 @include sm(){
                     font-size: 18px;
@@ -826,6 +827,15 @@
                 }
                 @include xxs(){
                     font-size: 12px;
+                }
+
+                ol{
+                    list-style-type: lower-alpha;
+                    margin-left: -10px;
+
+                    @include sm(){
+                        margin-left: -20px;
+                    }
                 }
 
             }

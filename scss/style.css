@@ -908,6 +908,7 @@
   color: #603813;
   text-align: left;
   font-size: 20px;
+  margin-bottom: 5px;
 }
 @media all and (max-width: 768px) {
   .wrap .Introduction2 ol li {
@@ -922,6 +923,15 @@
 @media all and (max-width: 420px) {
   .wrap .Introduction2 ol li {
     font-size: 12px;
+  }
+}
+.wrap .Introduction2 ol li ol {
+  list-style-type: lower-alpha;
+  margin-left: -10px;
+}
+@media all and (max-width: 768px) {
+  .wrap .Introduction2 ol li ol {
+    margin-left: -20px;
   }
 }
 .wrap .Introduction2 #Introduction2Title {
