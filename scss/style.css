@@ -274,6 +274,11 @@
   background-size: contain;
   background-position: center;
 }
+.wrap .botton-s .twitch_s {
+  background: url(../img/img/twitch.webp) no-repeat;
+  background-size: contain;
+  background-position: center;
+}
 .wrap .botton-s div {
   position: relative;
   width: 50px;
